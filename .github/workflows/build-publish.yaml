@@ -2,10 +2,13 @@ name: Build
 
 on:
   repository_dispatch:
-    types: do-something
-  push:
-    branches:
-      - master
+    types: [opened, deleted]
+# on:
+#   repository_dispatch:
+#     types: do-something
+#   push:
+#     branches:
+#       - master
 
 jobs:
   build:
